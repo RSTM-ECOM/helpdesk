@@ -5,7 +5,7 @@ the Dockerfile copies the patches below on top. No asset build is needed, so a b
 
 | Patch | What it does |
 |---|---|
-| `config/initializers/rstm_open_counts.rb` | Sidebar badges (inboxes, labels, teams, folders) count **open** conversations instead of unread ones, like the Gorgias views. Needs the account features `conversation_unread_counts` and `unread_count_for_filters`. |
+| `config/initializers/rstm_open_counts.rb` | Sidebar badges (inboxes, labels, teams, folders) count **open** conversations instead of unread ones, like the Gorgias views. Folder badges refresh within 30 s (Chatwoot default 5 min). Needs the account features `conversation_unread_counts` and `unread_count_for_filters`. |
 
 ## Update Chatwoot
 
