@@ -11,7 +11,8 @@ the Dockerfile copies the patches below on top. No asset build is needed, so a b
 
 1. Change `CHATWOOT_VERSION` in `Dockerfile` (or the build arg in the Coolify compose).
 2. Check that the patched methods still exist in the new version
-   (`app/services/conversations/unread_counts/{builder,refresher,filtered_counter,filter_query_counter}.rb`).
+   (`app/services/conversations/unread_counts/{builder,refresher,filtered_counter,filter_query_counter}.rb`) and that the
+   overridden footer templates still exist under the same path.
 3. Commit, put the new commit into the Coolify compose (`build.context`), deploy.
 
 Operations notes: `connectors/registry/helpdesk.md` in rstm-mission-control.
