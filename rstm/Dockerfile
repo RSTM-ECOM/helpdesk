@@ -3,4 +3,6 @@
 ARG CHATWOOT_VERSION=v4.18.0
 FROM chatwoot/chatwoot:${CHATWOOT_VERSION}
 COPY config/initializers/ /app/config/initializers/
+COPY config/locales/ /app/config/locales/
 COPY app/ /app/app/
+COPY public/rstm/ /app/public/rstm/

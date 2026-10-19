@@ -1,0 +1,14 @@
+# RSTM patch (19.10.2026): customer-facing German texts in "du", like MamaWillow and Share talk to their customers.
+# Loaded after de.yml (file name sorts last), so these keys override Chatwoot's formal "Sie" versions.
+de:
+  conversations:
+    templates:
+      ways_to_reach_you_message_body: Gib dem Team einen Weg, dich zu erreichen.
+      email_input_box_message_body: Lass dich per E-Mail benachrichtigen
+    survey:
+      response: Bitte bewerte dieses Gespräch, %{link}
+  public_portal:
+    hero:
+      sub_title: Such hier nach Artikeln oder stöbere in den Kategorien unten.
+    404:
+      description: Wir konnten die Seite, die du suchst, nicht finden.
